@@ -18,7 +18,7 @@ function setup() {
   background1.addImage(backgroundImage);
   parachute1 = createSprite(200,200,50,100);
   parachute1.addImage(parachute1Image);
-  parachute1.velocityX = 2;
+  
   database.ref('parachute1/position').on("value",function(data){
       
     parachute1.x = data.val().x;
